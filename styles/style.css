@@ -1,6 +1,6 @@
 .section-heading {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 .carousel-paragraphs {
     font-family: 'Poppins', sans-serif;
@@ -9,4 +9,20 @@
 .convention-img {
     height: 584px;
     width: 1440px;
+}
+.section-paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.package-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.package-details {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.rounded-pill {
+    color: #3F87F5;
+    background-color: #FEF5FA;
 }
