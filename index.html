@@ -115,7 +115,7 @@
               <p class="package-details"><i class="fas fa-check-circle"></i> event support</p>
               <p class="package-details"><i class="fas fa-check-circle"></i> Decoration design</p>
               <p class="package-details"><i class="fas fa-check-circle"></i> Per day bill</p>
-              <a href="https://web.programming-hero.com"><button type="button" class="p-3 btn rounded-pill">Choose Plan</button></a>
+              <a href="https://web.programming-hero.com"><button type="button" class="px-5 btn rounded-pill">Choose Plan</button></a>
           </div>
           <div class="col">
               <h5 class="package-title">$500</h5>
@@ -126,9 +126,10 @@
               <p class="package-details"><i class="fas fa-check-circle"></i> mangement support</p>
               <p class="package-details"><i class="fas fa-check-circle"></i> Decoration design</p>
               <p class="package-details"><i class="fas fa-check-circle"></i> Billed as shift</p>
-              <a href="https://web.programming-hero.com"><button type="button" class="p-3 btn rounded-pill">Choose Plan</button></a>
+              <a href="https://web.programming-hero.com"><button type="button" class="px-5 btn rounded-pill">Choose Plan</button></a>
           </div>
-          <div class="col">
+          <div data-bs-toggle="tooltip" data-bs-placement="top" title="Hot" class="col shadow-lg bg-success text-white p-5" id="special-package">
+
               <h5 class="package-title">$800</h5>
               <h5 class="package-title">Wedding Plus</h5>
               <p class="package-details">For most weddings with premium plans</p>
@@ -137,7 +138,7 @@
               <p class="package-details"><i class="fas fa-check-circle"></i> Buffet food</p>
               <p class="package-details"><i class="fas fa-check-circle"></i> premium Decoration</p>
               <p class="package-details"><i class="fas fa-check-circle"></i> pay as plan</p>
-              <a href="https://web.programming-hero.com"><button type="button" class="p-3 btn rounded-pill">Choose Plan</button></a>
+              <a href="https://web.programming-hero.com"><button type="button" class="px-5 btn rounded-pill">Choose Plan</button></a>
           </div>
           <div class="col">
               <h5 class="package-title">$1200</h5>
@@ -148,12 +149,19 @@
               <p class="package-details"><i class="fas fa-check-circle"></i> Buffet food</p>
               <p class="package-details"><i class="fas fa-check-circle"></i> premium Decoration</p>
               <p class="package-details"><i class="fas fa-check-circle"></i> pay as plan</p>
-              <a href="https://web.programming-hero.com"><button type="button" class="p-3 btn rounded-pill">Choose Plan</button></a>
+              <a href="https://web.programming-hero.com"><button type="button" class="px-5 btn rounded-pill">Choose Plan</button></a>
           </div>
         </div>
       </section>
     </main>
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Tooltip Bootstrap -->
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
 </body>
 </html>
