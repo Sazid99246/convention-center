@@ -90,12 +90,23 @@
           </section>
     </header>
     <main>
+      <div class="toast" data-autohide="false">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small class="text-muted">11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
       <section class="container mt-5">
         <div class="row">
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-6 col-12">
             <img class="img-fluid" src="./images/wedding.png" alt="">
           </div>
-          <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
+          <div class="col-lg-6 col-12 d-flex flex-column justify-content-center">
             <h2 class="section-heading">Every moment is Precious</h2>
             <p class="section-paragraph">Your every moment is very important to us. We value our customer's time importantly. Here you can arrange events as you like. We are always here to help you. We make every moment very beautiful for you.</p>
             <a href="https://www.freepik.com/"><button type="button" class="btn btn-primary text-white">Explore Our Album  <i class="fas fa-arrow-right"></i></button></a>
@@ -105,7 +116,7 @@
         <!-- Packages Section -->
       <section class="my-5 container">
         <h2 class="text-center">Our Packages</h2>
-        <div class=" mt-5 row row-cols-sm-1 row-cols-lg-4 g-4">
+        <div class=" mt-5 row row-cols-1 row-cols-lg-4 g-4">
           <div class="col">
               <h5 class="package-title">$300</h5>
               <h5 class="package-title">Business Fair</h5>
@@ -154,7 +165,7 @@
       </section>
       <section class="container">
         <h2 class="section-heading mb-5 text-center">Happy Client Says</h2>
-        <div class="row row-cols-sm-1 row-cols-lg-4 d-flex justify-content-evenly">
+        <div class="row row-cols-1 row-cols-lg-4 d-flex justify-content-evenly">
           <div class="col shadow p-4">
             <div class="d-flex flex-column align-items-center justify-content-between">
               <p class="text-center">I am a Bankar. I have to do client meetings convention centers. I have joined with them and I found their center nice and perfect for any kind of events.</p><br>
@@ -185,7 +196,7 @@
       <section class="container mt-5">
         <h2 class="section-heading text-center mb-5">Frequently Asked Questions</h2>
         <div class="row">
-          <div class="col-sm-12 col-lg-6">
+          <div class="col-12 col-lg-6">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -236,30 +247,30 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-6">
+          <div class="col-12 col-lg-6">
             <img src="./images/people.png" alt="" class="img-fluid">
           </div>
         </div>
       </section>
-      <footer class="bg-dark text-white container-fluid p-5 mt-5">
-        <div class="d-flex justify-content-around align-items-center">
-          <div>
-            <p>&#169;	2022 bike. All rights reserved</p>
+    </main>
+    <footer class="bg-dark text-white container-fluid p-5 mt-5">
+      <div class="d-flex justify-content-around align-items-center">
+        <div>
+          <p>&#169;	2022 bike. All rights reserved</p>
+        </div>
+        <div class="d-flex flex-column">
+          <h5>Get the app</h5>
+          <div class="m-1 bg-dark border border-light rounded p-2">
+            <i class="fab fa-apple"></i>
+            <a class="text-white text-decoration-none p-1" href="https://apps.apple.com/us/app/snapchat/id447188370">App Store</a>
           </div>
-          <div class="d-flex flex-column">
-            <h5>Get the app</h5>
-            <div class="m-1 bg-dark border border-light rounded p-2">
-              <i class="fab fa-apple"></i>
-              <a class="text-white text-decoration-none p-1" href="https://apps.apple.com/us/app/snapchat/id447188370">App Store</a>
-            </div>
-            <div class="m-1 bg-dark border border-light rounded p-2">
-              <i class="fab fa-google-play"></i>
-              <a class="text-white text-decoration-none p-1" href="https://play.google.com/store/apps/details?id=com.snapchat.android">Google Play</a>
-            </div>
+          <div class="m-1 bg-dark border border-light rounded p-2">
+            <i class="fab fa-google-play"></i>
+            <a class="text-white text-decoration-none p-1" href="https://play.google.com/store/apps/details?id=com.snapchat.android">Google Play</a>
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Tooltip Bootstrap -->
@@ -269,5 +280,17 @@
       return new bootstrap.Tooltip(tooltipTriggerEl)
 })
     </script>
+    <!-- Bootstrap Toast -->
+    <script>
+      var toastTrigger = document.getElementById('liveToastBtn')
+var toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+  </script>
 </body>
 </html>
